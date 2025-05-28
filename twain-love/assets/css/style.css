@@ -2378,7 +2378,6 @@ couple-area end
   font-weight: 600;
   color: #444;
   margin: 0 0 0.5em;
-  text-transform: capitalize;
   font-family: 'Great Vibes', cursive;
 }
 
@@ -2488,10 +2487,11 @@ animation: spineer 2s infinite;
 =================================*/
 
 .cta-area {
-    background: url(../images/cta/img-1.jpg) no-repeat center center / cover;
+    background: url(../images/fotos/IMG-20250425-WA0080.jpg) no-repeat center top / cover;
     position: relative;
     background-attachment: fixed;
 }
+
 
 .cta-area:before {
     content: "";
@@ -2664,15 +2664,16 @@ animation: spineer 2s infinite;
 .groomsmen-bridesmaid-img {
     position: relative;
     overflow: hidden;
+    height: 400px; /* Ajusta este valor según lo que necesites */
 }
 
 .groomsmen-bridesmaid-img img {
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    -ms-transition: all 0.5s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Hace que la imagen se recorte pero llene el contenedor */
     transition: all 0.5s;
 }
+
 
 .groomsmen-bridesmaid-wrap:hover .groomsmen-bridesmaid-img img {
     -webkit-transform: scale(1.2) rotate(5deg);
