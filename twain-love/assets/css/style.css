@@ -2110,10 +2110,12 @@ couple-area end
 =============================*/
 
 .count-down-area {
-    background: url(../images/counter/1.jpg) no-repeat center center / cover;
+    background: url(../images/fotos/IMG-20250425-WA0060.jpg) no-repeat center center / cover;
+    background-position: center 1%; /* bajá el valor para moverla hacia abajo */
     background-attachment: fixed;
     position: relative;
 }
+
 
 .count-down-area:before {
     content: "";
