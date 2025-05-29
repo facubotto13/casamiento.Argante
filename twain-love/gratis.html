@@ -597,13 +597,15 @@
                         <div class="confirmation-row">
                             <div class="col-12 text-center">
                                 <h4 id="cantidadAsistentes"></h4>
-                                <h4 id="valorTotal"></h4>
-                                <p class="confirmation-text">Por favor, realizar el pago a la siguiente cuenta:</p>
-                                <p class="payment-details"><strong>Cuenta: Mercado Pago</strong></p>
-                                <p class="payment-details"><strong>Titular: Hermes Juan Antonio Argante</strong></p>
-                                <p class="payment-details"><strong>CUIL/CUIT: 23-17070514-9</strong></p>
-                                <p class="payment-details"><strong>Alias: tacural2024</strong></p>
-                                <p class="payment-details"><strong>CVU: 0000003100038286501995</strong></p>
+                                <p class="confirmation-message">
+                                    ¡Gracias por confirmar tu asistencia! 🥳
+                                </p>
+                                <p class="confirmation-detail">
+                                    Esta invitación <strong>no tiene costo</strong>, ya que está destinada a nuestros <strong>invitados especiales</strong>.
+                                </p>
+                                <p class="confirmation-detail">
+                                    Será un verdadero honor contar con tu presencia en este evento tan importante.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -626,14 +628,6 @@
         font-weight: bold;
         margin-top: 10px;
         display: block;
-    }
-
-    .tarjeta-valor {
-        font-weight: bold;
-        margin-top: 5px;
-        color: #ff0000;
-        text-align: center;
-        background-color: #ffffff;
     }
 
     .asistente-container {
@@ -670,6 +664,11 @@
 
     .submit:hover {
         background-color: #0056b3;
+    }
+
+    .confirmation-text {
+        font-size: 16px;
+        margin-top: 10px;
     }
 </style>
 
@@ -710,42 +709,18 @@ document.getElementById("numAsistentes").addEventListener("input", function () {
                     </select>
                 </div>
             </div>
-            <div class="col-12">
-                <span class="tarjeta-valor" id="tarjetaValor${i}">Valor de la tarjeta: $50.000.</span>
-            </div>
         `;
 
         container.appendChild(div);
     }
-
-    actualizarValores();
 });
 
-function actualizarValores() {
-    document.querySelectorAll(".edad-select").forEach(select => {
-        select.addEventListener("change", function () {
-            let row = this.closest(".asistente-container");
-            let edad = row.querySelector(".edad-select").value;
-            let valorTarjeta = row.querySelector(".tarjeta-valor");
-
-            if (edad === "Menor") {
-                valorTarjeta.textContent = "Valor de la tarjeta: $25.000.";
-            } else {
-                valorTarjeta.textContent = "Valor de la tarjeta: $50.000.";
-            }
-        });
-    });
-}
-
-// Validación antes de enviar
 document.getElementById("rsvp-form").addEventListener("submit", function (event) {
     event.preventDefault();
 
     let valid = true;
     let inputs = document.querySelectorAll(".input-field");
     let successMessage = document.getElementById("success");
-    let asistentes = [];
-    let totalValor = 0;
 
     successMessage.style.display = "none";
 
@@ -766,28 +741,13 @@ document.getElementById("rsvp-form").addEventListener("submit", function (event)
 
     const numAsistentes = parseInt(document.getElementById("numAsistentes").value);
 
-    for (let i = 1; i <= numAsistentes; i++) {
-        let nombre = document.querySelector(`input[name='nombre${i}']`).value;
-        let edad = document.querySelector(`select[name='edad${i}']`).value;
-        let valor = edad === "Mayor" ? 50000 : 25000;
-
-        asistentes.push({
-            nombre: nombre,
-            edad: edad,
-            asistencia: "Cena",
-            valor: valor
-        });
-
-        totalValor += valor;
-    }
-
     document.getElementById("rsvp").style.display = "none";
     document.getElementById("confirmation").style.display = "block";
 
-    document.getElementById("cantidadAsistentes").textContent = `Cantidad de asistentes: ${asistentes.length}`;
-    document.getElementById("valorTotal").textContent = `Valor total de las tarjetas: $${totalValor.toLocaleString()}`;
+    document.getElementById("cantidadAsistentes").textContent = `Cantidad de asistentes: ${numAsistentes}`;
 });
 </script>
+
 
 
 

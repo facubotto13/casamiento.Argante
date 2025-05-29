@@ -4217,3 +4217,32 @@ option {
   color: #333;
   line-height: 1.6;
 }
+
+.confirmation-box {
+    background: #f9f9f9;
+    border: 2px solid #e0e0e0;
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.confirmation-icon {
+    font-size: 50px;
+    color: #4BB543;
+    margin-bottom: 15px;
+}
+
+.confirmation-message {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.confirmation-detail {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
