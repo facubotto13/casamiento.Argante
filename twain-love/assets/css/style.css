@@ -3017,7 +3017,7 @@ animation: spineer 2s infinite;
 }
 
 .rsvp-area {
-    background: url(../images/rsvp/img-1.jpg) no-repeat center center / cover;
+    background: url(../images/fotos/IMG-20250425-WA0080.jpg) no-repeat center 5% / cover;
     padding: 150px 0;
     position: relative;
     background-attachment: fixed;
@@ -4138,4 +4138,82 @@ option {
 
 .mb-0 {
   color: #000000;
+}
+
+#confirmation {
+  background: url(../images/fotos/IMG-20250425-WA0080.jpg) no-repeat center 5% / cover;
+  padding: 150px 0;
+  position: relative;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+#confirmation:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .8;
+    z-index: -1;
+}
+
+
+
+@media (max-width: 768px) {
+  .rsvp-area,
+  #confirmation {
+    background-attachment: scroll !important;
+  }
+}
+
+.confirmation-section {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.confirmation-section .confirmation-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.confirmation-section .confirmation-text {
+  color: #000000; /* Texto en color negro */
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.confirmation-section .confirmation-text strong {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.confirmation-section h4 {
+  color: #000000; /* Texto en color negro */
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.confirmation-section p {
+  color: #000000; /* Texto en color negro */
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.confirmation-section .payment-details {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
 }
