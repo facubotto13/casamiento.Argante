@@ -339,8 +339,8 @@
                         <div class="tabs-site-button">
                             <div class="event-tabs">
                                 <div class="row">
-                                    <div class="col-md-8 col-md-offset-3 col-sm-11 col-sm-offset-1 col-xs-10 col-xs-offset-2">
-                                        <ul class="nav nav-tabs">
+                                    <div class="col-xs-12 text-center">
+                                        <ul class="nav nav-tabs" style="display: inline-block; float: none">
                                             <li class="event-content"><a data-toggle="tab" href="#turbo">Ceremonia</a></li>
                                             <li class="event-content"><a data-toggle="tab" href="#tyre">Fiesta</a></li>
                                         </ul>
@@ -430,7 +430,7 @@
             <div class="container">
                 <div class="col-l2">
                     <div class="section-title text-center">
-                        <h2>Testigos</h2>
+                        <h2>Padrino y Madrina</h2>
                     </div>
                 </div>
                 <div class="groomsmen-bridesmaid-area-menu">
@@ -536,69 +536,44 @@
 
         <!-- rsvp-area start -->
 <!-- rsvp-area start -->
-<div id="rsvp" class="rsvp-area go-rsvp-area">
+<!-- RSVP Area Start -->
+<div id="rsvp" class="rsvp-area rsvp-area-2 go-rsvp-area">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
                 <div class="rsvp-wrap">
-                    <div class="section-title section-title-2 text-center">
-                        <h2>Confirmá tu asistencia</h2>
+                    <div class="col-12">
+                        <div class="section-title section-title-2 text-center">
+                            <h2>Confirmá tu asistencia</h2>
+                        </div>
                     </div>
-                    <!-- Formulario principal -->
-                    <div class="contact-form form-style" id="rsvp-form-container">
-                        <form id="rsvp-form" method="post">
-                            <div class="row g-3">
+                    <div class="contact-form form-style">
+                        <form id="rsvp-form" action="mail.php" method="post">
+                            <div class="row">
+                                <!-- Cantidad de asistentes -->
                                 <div class="col-12">
-                                    <label>Cantidad</label>
-                                    <select class="form-control" name="cantidad" required>
-                                        <option disabled selected>Seleccioná una cantidad</option>
-                                        <option value="1">1 persona</option>
-                                        <option value="2">2 personas</option>
-                                        <option value="3">3 personas</option>
-                                        <option value="4">4 personas</option>
-                                    </select>
+                                    <label class="mt-3">Cantidad de asistentes*</label>
+                                    <input type="number" class="form-control input-field" id="numAsistentes" name="numAsistentes" min="1" max="10" required>
                                 </div>
-                                <div class="col-12">
-                                    <input type="text" name="nombre" placeholder="Nombre completo*" required>
+
+                                <div id="asistentesContainer" class="col-12 mt-3">
+                                    <!-- Aquí se generarán los asistentes dinámicamente -->
                                 </div>
-                                <div class="col-12">
-                                    <input type="tel" name="telefono" placeholder="Teléfono*" required>
+
+                                <div class="col-12 text-center mt-4">
+                                    <button type="submit" id="submit" class="submit">Enviar Confirmación</button>
+                                    <span id="loader" style="display: none;">
+                                        <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
+                                    </span>
                                 </div>
-                                <div class="col-12">
-                                    <label>¿Mayor o menor (3 a 12 años)?</label>
-                                    <select class="form-control" name="edad" required>
-                                        <option disabled selected>Seleccioná una opción</option>
-                                        <option value="mayor">Mayor</option>
-                                        <option value="menor">Menor (3 a 12 años)</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <label>Preferencia alimenticia</label>
-                                    <select class="form-control" name="alimentacion" required>
-                                        <option disabled selected>Seleccioná una opción</option>
-                                        <option value="sin">Sin preferencias</option>
-                                        <option value="vegano">Vegano/a</option>
-                                        <option value="vegetariano">Vegetariano/a</option>
-                                        <option value="celiaco">Celíaco/a</option>
-                                    </select>
-                                </div>
-                                <div class="col-12 text-center mt-3">
-                                    <button type="submit" class="submit">Confirmar asistencia</button>
+
+                                <div class="col-12 success-error-message text-center mt-3">
+                                    <div id="success" style="display: none; color: green; font-weight: bold;">
+                                        ¡Gracias por confirmar tu asistencia!
+                                    </div>
                                 </div>
                             </div>
                         </form>
-                    </div>
-
-                    <!-- Confirmación (oculta inicialmente) -->
-                    <div id="confirmacion-final" class="text-center" style="display: none;">
-                        <h3>¡Gracias por confirmar!</h3>
-                        <p><strong>Cantidad confirmada:</strong> <span id="resumen-cantidad"></span></p>
-                        <p><strong>Total a abonar:</strong> $<span id="resumen-monto"></span> (ej. $15.000 por adulto, $8.000 por menor)</p>
-                        <hr>
-                        <h4>Datos para transferencia</h4>
-                        <p><strong>Alias:</strong> casamiento.valbe</p>
-                        <p><strong>CBU:</strong> 0000003100001234567890</p>
-                        <p><strong>Titular:</strong> Nombre Apellido</p>
                     </div>
                 </div>
             </div>
@@ -606,29 +581,215 @@
     </div>
 </div>
 <!-- rsvp-area end -->
+
+<!-- Confirmation Area Start -->
+<div id="confirmation" style="display: none;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                <div class="rsvp-wrap">
+                    <div class="col-12">
+                        <div class="section-title section-title-2 text-center">
+                            <h2>Confirmación de asistencia</h2>
+                        </div>
+                    </div>
+                    <div class="confirmation-section">
+                        <div class="confirmation-row">
+                            <div class="col-12 text-center">
+                                <h4 id="cantidadAsistentes"></h4>
+                                <h4 id="valorTotal"></h4>
+                                <p class="confirmation-text">Por favor, realizar el pago a la siguiente cuenta:</p>
+                                <p class="payment-details"><strong>Cuenta: Mercado Pago</strong></p>
+                                <p class="payment-details"><strong>Titular: Gustavo Javier Zehnder</strong></p>
+                                <p class="payment-details"><strong>CUIL/CUIT: 20-24499108-5</strong></p>
+                                <p class="payment-details"><strong>Alias: gus040375</strong></p>
+                                <p class="payment-details"><strong>CVU: 0000003100038286501995</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Confirmation Area End -->
+
+<style>
+    .input-field {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    label {
+        font-weight: bold;
+        margin-top: 10px;
+        display: block;
+    }
+
+    .tarjeta-valor {
+        font-weight: bold;
+        margin-top: 5px;
+        color: #ff0000;
+        text-align: center;
+        background-color: #ffffff;
+    }
+
+    .asistente-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .row-flex {
+        display: flex;
+        gap: 15px;
+    }
+
+    .row-flex > div {
+        flex: 1;
+    }
+
+    .section-title-2 {
+        margin-bottom: 30px;
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .submit {
+        background-color: #007BFF;
+        color: #fff;
+        padding: 10px 30px;
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+    }
+
+    .submit:hover {
+        background-color: #0056b3;
+    }
+</style>
+
 <script>
-document.getElementById("rsvp-form").addEventListener("submit", function(e) {
-    e.preventDefault();
+document.getElementById("numAsistentes").addEventListener("input", function () {
+    let num = parseInt(this.value);
+    let container = document.getElementById("asistentesContainer");
+    container.innerHTML = "";
 
-    // Obtener datos
-    const cantidad = parseInt(this.cantidad.value);
-    const edad = this.edad.value;
+    if (isNaN(num) || num < 1 || num > 10) {
+        return;
+    }
 
-    // Lógica de precios
-    const precioMayor = 15000;
-    const precioMenor = 8000;
+    for (let i = 1; i <= num; i++) {
+        let div = document.createElement("div");
+        div.classList.add("asistente-container");
 
-    const total = (edad === "menor" ? cantidad * precioMenor : cantidad * precioMayor);
+        div.innerHTML = `
+            <div class="col-12">
+                <label>Nombre completo*</label>
+                <input type="text" class="form-control input-field" name="nombre${i}" required>
+            </div>
+            <div class="row-flex">
+                <div>
+                    <label>Preferencia alimenticia*</label>
+                    <select class="form-control input-field" name="alimentacion${i}" required>
+                        <option value="Normal">Sin preferencias</option>
+                        <option value="Vegetariano">Vegetariano/a</option>
+                        <option value="Vegano">Vegano/a</option>
+                        <option value="Celiaco">Celíaco/a</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Edad*</label>
+                    <select class="form-control input-field edad-select" name="edad${i}" required>
+                        <option value="Mayor">Mayor</option>
+                        <option value="Menor">Menor (desde 5 hasta 11 años)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-12">
+                <span class="tarjeta-valor" id="tarjetaValor${i}">Valor de la tarjeta: $50.000.</span>
+            </div>
+        `;
 
-    // Insertar datos en la sección de confirmación
-    document.getElementById("resumen-cantidad").innerText = cantidad;
-    document.getElementById("resumen-monto").innerText = total;
+        container.appendChild(div);
+    }
 
-    // Ocultar formulario y mostrar confirmación
-    document.getElementById("rsvp-form-container").style.display = "none";
-    document.getElementById("confirmacion-final").style.display = "block";
+    actualizarValores();
+});
+
+function actualizarValores() {
+    document.querySelectorAll(".edad-select").forEach(select => {
+        select.addEventListener("change", function () {
+            let row = this.closest(".asistente-container");
+            let edad = row.querySelector(".edad-select").value;
+            let valorTarjeta = row.querySelector(".tarjeta-valor");
+
+            if (edad === "Menor") {
+                valorTarjeta.textContent = "Valor de la tarjeta: $25.000.";
+            } else {
+                valorTarjeta.textContent = "Valor de la tarjeta: $50.000.";
+            }
+        });
+    });
+}
+
+// Validación antes de enviar
+document.getElementById("rsvp-form").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    let valid = true;
+    let inputs = document.querySelectorAll(".input-field");
+    let successMessage = document.getElementById("success");
+    let asistentes = [];
+    let totalValor = 0;
+
+    successMessage.style.display = "none";
+
+    inputs.forEach(input => {
+        input.style.border = "1px solid #ccc";
+    });
+
+    inputs.forEach(input => {
+        if (!input.value.trim()) {
+            valid = false;
+            input.style.border = "2px solid red";
+        }
+    });
+
+    if (!valid) {
+        return;
+    }
+
+    const numAsistentes = parseInt(document.getElementById("numAsistentes").value);
+
+    for (let i = 1; i <= numAsistentes; i++) {
+        let nombre = document.querySelector(`input[name='nombre${i}']`).value;
+        let edad = document.querySelector(`select[name='edad${i}']`).value;
+        let valor = edad === "Mayor" ? 50000 : 25000;
+
+        asistentes.push({
+            nombre: nombre,
+            edad: edad,
+            asistencia: "Cena",
+            valor: valor
+        });
+
+        totalValor += valor;
+    }
+
+    document.getElementById("rsvp").style.display = "none";
+    document.getElementById("confirmation").style.display = "block";
+
+    document.getElementById("cantidadAsistentes").textContent = `Cantidad de asistentes: ${asistentes.length}`;
+    document.getElementById("valorTotal").textContent = `Valor total de las tarjetas: $${totalValor.toLocaleString()}`;
 });
 </script>
+
+
 
 
 

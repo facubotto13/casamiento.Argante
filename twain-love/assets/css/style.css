@@ -1802,7 +1802,7 @@ div#preloader {
 }
 
 .site-footer .text{
-  background: rgba(133,170,186,.9);
+  background: rgba(133,170,186,.4);
   max-width: 600px;
   margin: auto;
   padding: 60px 0;
@@ -2646,6 +2646,14 @@ animation: spineer 2s infinite;
     background: #f8f8f8;
     padding: 100px 0 70px;
 }
+
+.groomsmen-bridesmaid-area .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px; /* opcional: espacio entre tarjetas */
+}
+
 
 .groomsmen-bridesmaid-item {
     padding-top: 50px;
