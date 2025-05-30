@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="themepresss">
+
+    <!-- Page Title -->
+    <title> Nos casamos - Marcos y Virginia </title>
+
+
+    <!-- Icon fonts -->
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/flaticon.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Plugins for this template -->
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/owl.carousel.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.css" rel="stylesheet">
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <link href="assets/css/swiper.min.css" rel="stylesheet">
+    <link href="assets/css/slick-theme.css" rel="stylesheet">
+    <link href="assets/css/owl.transitions.css" rel="stylesheet">
+    <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="home">
+
+    <!-- start page-wrapper -->
+    <div class="page-wrapper">
+
+        <!-- prealoader area start -->
+        <div id="preloader">
+            <div class="spiner"></div>
+        </div>
+        <!-- prealoader area end -->
+
+
+        <!-- Start header -->
+        <header class="site-header header-style-1">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+            <nav class="navigation navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="open-btn">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <h1 class="site-logo">
+                            <a class="navbar-brand" href="index.html">Marcos y Virginia</a>
+                        </h1>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse navbar-right navigation-holder">
+                        <button class="close-navbar"><i class="ti-close"></i></button>
+                        <ul class="nav navbar-nav">
+                            <li class="current-menu-item"><a href="#home">Inicio</a></li>
+                            <li><a href="#couple">Pareja</a></li>
+                            <li><a href="#story">Historia</a></li>
+                            <li><a href="#event">Eventos</a></li>
+                            <li><a href="#people">Testigos</a></li>
+                            <li><a href="#gallery">Galería</a></li>
+                            <li><a href="#rsvp">Asistencia</a></li>
+                            <!-- Candado en menú hamburguesa (solo visible en móvil) -->
+                    <li class="lock-menu-item d-md-none">
+                        <a href="login.php" title="Acceso administrativo">
+                            <i class="fas fa-lock"></i>
+                        </a>
+                    </li>
+                            <!--<li class="menu-item-has-children">
+                                <a href="javascript:void(0);">Noticias</a>
+                                <ul class="sub-menu">
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="blog-width-sidebar.html">Blog With Sidebar</a></li>
+                                    <li class="menu-item-has-children">
+                                        <a href="#Level3">Blog Details</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="blog-single.html">Blog Details</a></li>
+                                            <li><a href="blog-single-sidebar.html">Blog Details Sidebar</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>-->
+                        </ul>
+                    </div><!-- end of nav-collapse -->
+                    <div class="bottom-border"></div>
+                </div><!-- end of container -->
+            </nav>
+        </header>
+        <!-- end of header -->
+
+
+              
+        <!-- start of hero -->
+        <section class="hero-slider hero-style-3">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-inner slide-bg-image" data-background="assets/images/fotos/banner1.png">
+                            <div class="container">
+                                <div class="slide-content">
+                                    <div data-swiper-parallax="200" class="slide-subtitle">
+                                        <h4>Nos vamos a casar</h4>
+                                    </div>
+                                    <div data-swiper-parallax="300" class="slide-title">
+                                        <h2>Marcos y Virginia</h2>
+                                    </div>
+                                    <div data-swiper-parallax="400" class="slide-text">
+                                        <p>21 de Junio del 2025</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div> <!-- end slide-inner --> 
+                    </div> <!-- end swiper-slide -->
+
+                    <div class="swiper-slide">
+                        <div class="slide-inner slide-bg-image" data-background="assets/images/fotos/banner2.png">
+                            <div class="container">
+                                <div class="slide-content">
+                                    <div data-swiper-parallax="200" class="slide-subtitle">
+                                        <h4>Nos vamos a casar</h4>
+                                    </div>
+                                    <div data-swiper-parallax="300" class="slide-title">
+                                        <h2>Marcos y Virginia</h2>
+                                    </div>
+                                    <div data-swiper-parallax="400" class="slide-text">
+                                        <p>21 de Junio del 2025</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div> 
+                        </div> <!-- end slide-inner --> 
+                    </div> <!-- end swiper-slide -->
+
+                    <div class="swiper-slide">
+                        <div class="slide-inner slide-bg-image" data-background="assets/images/fotos/banner3.png">
+                            <div class="container">
+                                <div class="slide-content">
+                                    <div data-swiper-parallax="200" class="slide-subtitle">
+                                        <h4>Nos vamos a casar</h4>
+                                    </div>
+                                    <div data-swiper-parallax="300" class="slide-title">
+                                        <h2>Marcos y Virginia</h2>
+                                    </div>
+                                    <div data-swiper-parallax="400" class="slide-text">
+                                        <p>21 de Junio del 2025</p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div> 
+                        </div> <!-- end slide-inner --> 
+                    </div><!-- end swiper-slide --> 
+                </div>
+                <!-- end swiper-wrapper -->
+
+                <!-- swipper controls -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+        <!-- end of hero slider -->
+         <!-- couple-area start -->
+        <div id="couple" class="couple-area section-padding">
+            <div class="container">
+                <div class="col-l2">
+                    <div class="section-title text-center">
+                        <h2>Pareja feliz</h2>
+                    </div>
+                </div>
+                <div class="couple-wrap">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 grid couple-single">
+                            <div class="couple-wrap">
+                                <div class="couple-img">
+                                    <img src="assets/images/fotos/pareja2.png" alt="">
+                                </div>
+                                <div class="couple-text">
+                                    <div class="couple-content">
+                                        <h4>Virginia Palmero</h4>
+                                        <p>Hola! Mi nombre es Virginia, la novia, tengo 31 años.
+                                            Crecí y viví siempre en Humberto Primo y este año me mude a Tacural para formar mi familia.
+                                            Soy simpática, sencilla y muy familiera. 
+                                            Estoy siempre dispuesta a ayudar a quien lo necesite.
+                                            Me gusta mucho cocinar y hoy me dedico a ser ama de casa. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 couple-single md-0 grid">
+                            <div class="couple-wrap">
+                                <div class="couple-img couple-img-2">
+                                    <img src="assets/images/fotos/pareja1.png" alt="">
+                                </div>
+                                <div class="couple-text">
+                                    <div class="couple-content">
+                                        <h4>Marcos Argante</h4>
+                                        <p>Hola! Mi nombre es Marcos, el novio, tengo 31 años.
+                                            Crecí y viví siempre en el campo, zona rural de Tacural y este año me mude al pueblo para formar mi familia. 
+                                            Soy muy sociable, simpático y amable.
+                                            Trabajo como productor agropecuario y me gusta correr midget.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- couple-area end -->
+        <!-- start count-down-section -->
+        <div class="count-down-area count-down-area-sub">
+            <section class="count-down-section section-padding parallax" data-speed="7">
+                <div class="container">
+                    <div class="col-12 text-center">
+                        <h2 class="big"><span>Nuestra noche especial está por llegar...</span></h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="count-down-clock">
+                                <div id="clock">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container -->
+            </section>
+        </div>
+        <!-- end count-down-section --> 
+        <!-- start story-section -->
+        <section class="story-section section-padding" id="story">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-xs-12">
+                        <div class="section-title">
+                            <h2>Nuestra historia de amor</h2>
+                        </div>
+                    </div>
+                </div> <!-- end section-title -->
+
+                <div class="row">
+                    <div class="col col-xs-12">
+                        <div class="story-timeline">
+                            <div class="row">
+                                <div class="col col-md-6">
+                                    <div class="story-text right-align-text">
+                                        <h3>Primera vez que nos conocimos</h3>
+                                        <span class="date">26 de Junio de 2022</span>
+                                        <p>Nuestro amor es especial, todo comenzó un 26 de Junio de 2022 cuando dos señales nos destinaron para siempre. Una pluma y una visita a la Virgen del Milagro, nos marcaron el camino.</p>
+                                    </div>
+                                </div>
+                                <div class="col col-md-6">
+                                    <div class="img-holder">
+                                        <img src="assets/images/fotos/IMG-20250425-WA0094.jpg" alt class="img img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-md-6">
+                                    <div class="img-holder right-align-text story-slider">
+                                        <img src="assets/images/fotos/IMG-20250425-WA0080.jpg" alt class="img img-responsive">
+                                    </div>
+                                </div>
+                                <div class="col col-md-6 text-holder">
+                                    <span class="heart">
+                                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="story-text">
+                                         <h3>Nuestra propuesta de matrimonio</h3>
+                                        <span class="date">25 de Abril de 2025</span>
+                                        <p>El 25 de Abril de 2025, nos casamos por civil, y ahora estamos muy felices esperando para dar el <strong>sí, queremos</strong> en el altar.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-md-6 text-holder right-heart">
+                                    <span class="heart">
+                                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                    </span>
+                                    <div class="story-text right-align-text">
+                                        <h3>Nuestro compromiso</h3>
+                                        <span class="date">21 de Junio de 2025</span>
+                                        <p>Ese día daremos un paso muy importante: elegiremos amarnos y acompañarnos para siempre. Será el comienzo de una nueva etapa llena de sueños, proyectos y mucho amor.</p>
+                                    </div>
+                                </div>
+                                <div class="col col-md-6">
+                                    <div class="img-holder right-align-text story-slider">
+                                        <img src="assets/images/fotos/historia4.png" alt class="img img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div> <!-- end row -->
+            </div> <!-- end container -->
+        </section>
+        <!-- end story-section -->
+        <!-- cta area start-->
+        <div class="cta-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="cta-content">
+                            <h2>¡Bienvenidos a nuestro gran día!</h2>
+                            <p>
+                                Nos llena de alegría poder compartir este momento tan especial con ustedes. Cada detalle fue pensado con amor para celebrar juntos el inicio de esta hermosa etapa.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- cta area end-->         
+        <!-- event-area -->
+        <div id="event" class="event-section">
+            <div class="container">
+                <div class="col-12">
+                    <div class="section-title text-center">
+                        <h2>¿Cuándo y dónde?</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="tabs-site-button">
+                            <div class="event-tabs">
+                                <div class="row">
+                                    <div class="col-xs-12 text-center">
+                                        <ul class="nav nav-tabs" style="display: inline-block; float: none">
+                                            <li class="event-content"><a data-toggle="tab" href="#turbo">Ceremonia</a></li>
+                                            <li class="event-content"><a data-toggle="tab" href="#tyre">Fiesta</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-12">
+                                    <div class="tab-content">
+                                        <!-- Ceremonia -->
+                                        <div id="turbo" class="tab-pane active">
+                                            <div class="event-wrap">
+                                                <div class="row">
+                                                    <div class="col-md-5 col-12">
+                                                        <div class="event-img">
+                                                            <img src="assets/images/fotos/ceremonia.png" alt>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-7 col-12">
+                                                        <div class="event-text">
+                                                            <h3>🕊 Ceremonia de boda</h3>
+                                                            <span>📅 Sábado, 21 de Junio de 2025, 20:15hs.</span>
+                                                            <span>📍 Parroquia Nuestra Señora de la Asunción - Tacural</span>
+                                                            <p>
+                                                                Nos daremos el “sí, quiero” rodeados del amor de nuestras familias y amigos 💍. 
+                                                                Será un momento único, lleno de emoción, fe y alegría, que marcará el inicio de nuestro camino juntos 🤍.
+                                                            </p>
+                                                            <div class="btn">
+                                                                <a class="popup-gmaps" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d720.1167184087751!2d-61.592370686545486!3d-30.845466067251344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943543d114f52961%3A0xf919eb143086ea7f!2sIglesia%20Nuestra%20Se%C3%B1ora%20de%20la%20Asunci%C3%B3n!5e0!3m2!1ses-419!2sar!4v1748398091991!5m2!1ses-419!2sar">
+                                                                    📌 Ubicación
+                                                                </a>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Fiesta -->
+                                        <div id="tyre" class="tab-pane">
+                                            <div class="row">
+                                                <div class="event-wrap">
+                                                    <div class="row">
+                                                        <div class="col-md-7 col-12">
+                                                            <div class="event-text event-text-2">
+                                                                <h3>🎉 Fiesta de boda</h3>
+                                                                <span>📅 Sábado, 21 de Junio de 2025, 21:00hs.</span>
+                                                                <span>📍 Salón Polideportivo - Tacural</span>
+                                                                <p>
+                                                                    Después de la ceremonia, los invitamos a celebrar con nosotros una noche inolvidable 🎶💃. 
+                                                                    Habrá buena comida, música y mucho amor para compartir.  
+                                                                    <br><br>
+                                                                    💳 <strong>Valor de la tarjeta:</strong><br>
+                                                                    • Mayores: $50.000<br>
+                                                                    • Menores de 5 a 11 años: $25.000
+                                                                </p>
+                                                                <div class="btn">
+                                                                    <a class="popup-gmaps" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3425.410099082993!2d-61.59733562462217!3d-30.847191374529285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9435423d50cec53f%3A0xd9e27b10e06fa254!2sPOLIDEPORTIVO%20DR.CARLOS%20TEMPORELLI!5e0!3m2!1ses-419!2sar!4v1748398222166!5m2!1ses-419!2sar">
+                                                                        📌 Ubicación
+                                                                    </a>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5 col-12">
+                                                            <div class="event-img">
+                                                                <img src="assets/images/fotos/fiesta.png" alt>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- event-area end -->
+        <!-- groomsmen-bridesmaid-area start -->
+        <div id="people" class="groomsmen-bridesmaid-area pt--150 pb--70">
+            <div class="container">
+                <div class="col-l2">
+                    <div class="section-title text-center">
+                        <h2>Padrino y Madrina</h2>
+                    </div>
+                </div>
+                <div class="groomsmen-bridesmaid-area-menu">
+                    <div class="Groomsman-wrap">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6 grid">
+                                <div class="groomsmen-bridesmaid-wrap">
+                                    <div class="groomsmen-bridesmaid-img">
+                                        <img src="assets/images/fotos/testigo1.jpg" alt="">
+
+                                    </div>
+                                    <div class="groomsmen-bridesmaid-content">
+                                        <h3>Alcides Ernesto Simonutti</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 grid">
+                                <div class="groomsmen-bridesmaid-wrap groomsmen-bridesmaid-wrap-2">
+                                    <div class="groomsmen-bridesmaid-img">
+                                        <img src="assets/images/fotos/testigo2.jpg" alt="">
+
+                                    </div>
+                                    <div class="groomsmen-bridesmaid-content">
+                                        <h3>Esther Lydia Albertengo</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- groomsmen-bridesmaid-area start -->
+        <!--Start project area-->  
+        <section id="gallery" class="gallery-section section-padding">
+            <div class="container">
+                <div class="col-l2">
+                    <div class="section-title text-center">
+                        <h2>Galería</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-xs-12 sortable-gallery">
+                        <br>
+                        <div class="gallery-container gallery-fancybox masonry-gallery">
+                            <div class="grid EnagagEment PartIes">
+                                <a href="assets/images/gallery/fotos/1.png" class="fancybox" data-fancybox-group="gall-1">
+                                    <img src="assets/images/gallery/fotos/1.png" alt class="img img-responsive">
+                                    <div class="icon">
+                                        <i class="ti-plus"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid Pre-Wedding EnagagEment PartIes">
+                                <a href="assets/images/gallery/fotos/2.png" class="fancybox" data-fancybox-group="gall-1">
+                                    <img src="assets/images/gallery/fotos/2.png" alt class="img img-responsive">
+                                    <div class="icon">
+                                        <i class="ti-plus"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid EnagagEment">
+                                <a href="assets/images/gallery/fotos/3.png" class="fancybox" data-fancybox-group="gall-1">
+                                    <img src="assets/images/gallery/fotos/3.png" alt class="img img-responsive">
+                                    <div class="icon">
+                                        <i class="ti-plus"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid Pre-Wedding PartIes">
+                                <a href="assets/images/gallery/fotos/4.png" class="fancybox" data-fancybox-group="gall-1">
+                                    <img src="assets/images/gallery/fotos/4.png" alt class="img img-responsive">
+                                    <div class="icon">
+                                        <i class="ti-plus"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid EnagagEment">
+                                <a href="assets/images/gallery/fotos/5.png" class="fancybox" data-fancybox-group="gall-1">
+                                    <img src="assets/images/gallery/fotos/5.png" alt class="img img-responsive">
+                                    <div class="icon">
+                                        <i class="ti-plus"></i>
+                                    </div>
+                                </a>
+                                
+                            </div>
+                            <div class="grid EnagagEment">
+                                <a href="assets/images/gallery/fotos/6.png" class="fancybox" data-fancybox-group="gall-1">
+                                    <img src="assets/images/gallery/fotos/6.png" alt class="img img-responsive">
+                                    <div class="icon">
+                                        <i class="ti-plus"></i>
+                                    </div>
+                                </a>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div> <!-- end row -->
+            </div>
+        </section>
+        <!--End project area--> 
+
+        <!-- rsvp-area start -->
+<!-- rsvp-area start -->
+<!-- RSVP Area Start -->
+<div id="rsvp" class="rsvp-area rsvp-area-2 go-rsvp-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                <div class="rsvp-wrap">
+                    <div class="col-12">
+                        <div class="section-title section-title-2 text-center">
+                            <h2>Confirmá tu asistencia</h2>
+                        </div>
+                    </div>
+                    <div class="contact-form form-style">
+                        <form id="rsvp-form" action="mail.php" method="post">
+                            <div class="row">
+                                <!-- Cantidad de asistentes -->
+                                <div class="col-12">
+                                    <label class="mt-3">Cantidad de asistentes*</label>
+                                    <input type="number" class="form-control input-field" id="numAsistentes" name="numAsistentes" min="1" max="10" required>
+                                </div>
+
+                                <div id="asistentesContainer" class="col-12 mt-3">
+                                    <!-- Aquí se generarán los asistentes dinámicamente -->
+                                </div>
+
+                                <div class="col-12 text-center mt-4">
+                                    <button type="submit" id="submit" class="submit">Enviar Confirmación</button>
+                                    <span id="loader" style="display: none;">
+                                        <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
+                                    </span>
+                                </div>
+
+                                <div class="col-12 success-error-message text-center mt-3">
+                                    <div id="success" style="display: none; color: green; font-weight: bold;">
+                                        ¡Gracias por confirmar tu asistencia!
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- rsvp-area end -->
+
+<!-- Confirmation Area Start -->
+<div id="confirmation" style="display: none;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                <div class="rsvp-wrap">
+                    <div class="col-12">
+                        <div class="section-title section-title-2 text-center">
+                            <h2>Confirmación de asistencia</h2>
+                        </div>
+                    </div>
+                    <div class="confirmation-section">
+                        <div class="confirmation-row">
+                            <div class="col-12 text-center">
+                                <h4 id="cantidadAsistentes"></h4>
+                                <h4 id="valorTotal"></h4>
+                                <p class="confirmation-text">Por favor, realizar el pago a la siguiente cuenta:</p>
+                                <p class="payment-details"><strong>Cuenta: Mercado Pago</strong></p>
+                                <p class="payment-details"><strong>Titular: Hermes Juan Antonio Argante</strong></p>
+                                <p class="payment-details"><strong>CUIL/CUIT: 23-17070514-9</strong></p>
+                                <p class="payment-details"><strong>Alias: tacural2024</strong></p>
+                                <p class="payment-details"><strong>CVU: 0000003100038286501995</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Confirmation Area End -->
+
+<style>
+    .input-field {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    label {
+        font-weight: bold;
+        margin-top: 10px;
+        display: block;
+    }
+
+    .tarjeta-valor {
+        font-weight: bold;
+        margin-top: 5px;
+        color: #ff0000;
+        text-align: center;
+        background-color: #ffffff;
+    }
+
+    .asistente-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .row-flex {
+        display: flex;
+        gap: 15px;
+    }
+
+    .row-flex > div {
+        flex: 1;
+    }
+
+    .section-title-2 {
+        margin-bottom: 30px;
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .submit {
+        background-color: #007BFF;
+        color: #fff;
+        padding: 10px 30px;
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+    }
+
+    .submit:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<script>
+document.getElementById("numAsistentes").addEventListener("input", function () {
+    let num = parseInt(this.value);
+    let container = document.getElementById("asistentesContainer");
+    container.innerHTML = "";
+
+    if (isNaN(num) || num < 1 || num > 10) {
+        return;
+    }
+
+    for (let i = 1; i <= num; i++) {
+        let div = document.createElement("div");
+        div.classList.add("asistente-container");
+        div.dataset.index = i;
+
+        div.innerHTML = `
+            <div class="col-12">
+                <label>Nombre completo*</label>
+                <input type="text" class="form-control input-field" name="nombre${i}" required>
+            </div>
+            <div class="row-flex">
+                <div>
+                    <label>Preferencia alimenticia*</label>
+                    <select class="form-control input-field" name="alimentacion${i}" required>
+                        <option value="Normal">Sin preferencias</option>
+                        <option value="Vegetariano">Vegetariano/a</option>
+                        <option value="Vegano">Vegano/a</option>
+                        <option value="Celiaco">Celíaco/a</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Edad*</label>
+                    <select class="form-control input-field edad-select" name="edad${i}" required>
+                        <option value="Mayor">Mayor</option>
+                        <option value="Menor">Menor (desde 5 hasta 11 años)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-12">
+                <span class="tarjeta-valor" id="tarjetaValor${i}">Valor de la tarjeta: $50.000.</span>
+                <input type="hidden" name="valor_tarjeta${i}" id="valorTarjetaInput${i}" value="50000">
+            </div>
+        `;
+
+        container.appendChild(div);
+    }
+
+    // Conecta event listeners a los selects edad para que actualicen valor_tarjeta
+    actualizarValores();
+});
+
+function actualizarValores() {
+    document.querySelectorAll(".edad-select").forEach(select => {
+        select.removeEventListener("change", cambiarValor);
+        select.addEventListener("change", cambiarValor);
+    });
+}
+
+function cambiarValor() {
+    let row = this.closest(".asistente-container");
+    let index = row.dataset.index;
+    let edad = this.value;
+    let valorTarjeta = row.querySelector(`#tarjetaValor${index}`);
+    let valorInput = row.querySelector(`#valorTarjetaInput${index}`);
+
+    let valor = edad === "Menor" ? 25000 : 50000;
+
+    valorTarjeta.textContent = `Valor de la tarjeta: $${valor.toLocaleString()}.`;
+    valorInput.value = valor;
+}
+
+// Validación y uso de datos antes de enviar (tu función original para mostrar resumen)
+document.getElementById("rsvp-form").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    let valid = true;
+    let inputs = document.querySelectorAll(".input-field");
+    let successMessage = document.getElementById("success");
+    let asistentes = [];
+    let totalValor = 0;
+
+    successMessage.style.display = "none";
+
+    inputs.forEach(input => {
+        input.style.border = "1px solid #ccc";
+    });
+
+    inputs.forEach(input => {
+        if (!input.value.trim()) {
+            valid = false;
+            input.style.border = "2px solid red";
+        }
+    });
+
+    if (!valid) {
+        return;
+    }
+
+    const numAsistentes = parseInt(document.getElementById("numAsistentes").value);
+
+    for (let i = 1; i <= numAsistentes; i++) {
+        let nombre = document.querySelector(`input[name='nombre${i}']`).value;
+        let edad = document.querySelector(`select[name='edad${i}']`).value;
+        let valor = parseInt(document.querySelector(`input[name='valor_tarjeta${i}']`).value);
+        let alimentacion = document.querySelector(`select[name='alimentacion${i}']`).value;
+
+        asistentes.push({
+            nombre: nombre,
+            edad: edad,
+            alimentacion: alimentacion,
+            valor: valor
+        });
+
+        totalValor += valor;
+    }
+
+    document.getElementById("rsvp").style.display = "none";
+    document.getElementById("confirmation").style.display = "block";
+
+    document.getElementById("cantidadAsistentes").textContent = `Cantidad de asistentes: ${asistentes.length}`;
+    document.getElementById("valorTotal").textContent = `Valor total de las tarjetas: $${totalValor.toLocaleString()}`;
+
+    // Aquí puedes enviar el formulario o procesar la info por AJAX si quieres
+});
+</script>
+
+
+
+
+
+
+
+        <!-- getting-area start -->
+<!--
+        <div class="gta-area">
+            <div class="container">
+                <div class="col-12">
+                    <div class="section-title text-center">
+                        <h2>Getting There</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2">
+                        <div class="row">
+                            <div class="heading col-md-12 col-sm-6">
+                                <h3>Transportation</h3>
+                                <div class="gta-content">
+                                    <p>industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s</p>
+                                </div>
+                                <div class="gta-img">
+                                    <img src="assets/images/gta/img-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="heading heading-2 col-md-12 col-sm-6">
+                                <h3>Accommodations</h3>
+                                <div class="gta-content">
+                                    <p>industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s</p>
+                                </div>
+                                <div class="gta-img">
+                                    <img src="assets/images/gta/img-1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+-->
+        <!-- getting-area end -->
+
+        <!-- Gift Registration start -->
+         
+        <div class="Gift-area pt--100 pb--30">
+            <div class="container">
+                <div class="col-12">
+                    <div class="section-title text-center">
+                        <h2>¡Te esperamos para compartir una noche inolvidable!</h2>
+                    </div>
+                    <!--
+                    <p>
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised.
+                    </p>
+                    -->
+                </div>
+                <!--
+                <div class="gift-item">
+                    <div class="Gift-carousel owl-carousel">
+                        <img src="assets/images/gift/img-1.jpg" alt="clinet">
+                        <img src="assets/images/gift/img-2.jpg" alt="clinet">
+                        <img src="assets/images/gift/img-3.jpg" alt="clinet">
+                        <img src="assets/images/gift/img-4.jpg" alt="clinet">
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+        <!-- Gift Registration end -->
+
+        <!-- start site-footer -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="text">
+                        <h2>Marcos y Virginia</h2>
+                        <p>¡Muchas gracias!</p>
+                    </div>
+
+                    <div class="back-to-top">
+                        <a href="#" class="back-to-top-btn"><span><i class="ti-arrow-up"></i></span></a>
+                    </div>
+                </div>
+            </div> <!-- end container -->
+        </footer>
+        <!-- end site-footer -->
+
+<footer class="fondofooter">
+    <!-- Fila para el copyright -->
+            <a href="https://solbot.com.ar" target="_blank" style="color: inherit; text-decoration: none; display: block;">
+                <p class="mb-0">© SolBot - Diseño y Desarrollo Web</p>
+            </a>
+
+</footer>
+
+<a href="https://wa.me/5493493407332" class="whatsapp-float" target="_blank" title="Escribime por WhatsApp">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
+</a>
+        <!-- strat music-box -->
+        <div class="music-box">
+            <button class="music-box-toggle-btn">
+                <i class="ti-music-alt"></i>
+            </button>
+            <div class="music-holder">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/10mVok0x7il365YolsPsr2?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+        <!-- end music box -->
+    </div>
+    <!-- end of page-wrapper -->
+
+
+
+    <!-- All JavaScript files
+    ================================================== -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins for this template -->
+    <script src="assets/js/jquery-plugin-collection.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+
+    <!-- Custom script for this template -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
