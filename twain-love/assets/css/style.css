@@ -1561,6 +1561,13 @@ div#preloader {
   z-index: 99;
 }
 
+@media (max-width: 768px) {
+  .hero-slider .slide-inner {
+    top: 0 !important;
+  }
+}
+
+
 
 @-webkit-keyframes spineer {
   0% {
@@ -1755,9 +1762,8 @@ div#preloader {
 }
 
 @media screen and (min-width: 992px) {
-  .hero-style-2 .container, .hero-style-3 .container {
-    margin-top: -100px;
-  }
+
+
 }
 
 @media (max-width: 991px) {
