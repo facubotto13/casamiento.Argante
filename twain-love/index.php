@@ -231,26 +231,31 @@
         </div>
         <!-- couple-area end -->
         <!-- start count-down-section -->
-        <div class="count-down-area count-down-area-sub">
-            <section class="count-down-section section-padding parallax" data-speed="7">
-                <div class="container">
-                    <div class="col-12 text-center">
-                        <h2 class="big"><span>Nuestra noche especial está por llegar...</span></h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="count-down-clock">
-                                <div id="clock">
-                                </div>
-                            </div>
+<div class="count-down-area count-down-area-sub">
+    
+    <!-- Fondo parallax con Rellax -->
+    <div class="rellax bg-image" data-rellax-speed="-2"></div>
+
+    <section class="count-down-section section-padding">
+        <div class="container">
+            <div class="col-12 text-center">
+                <h2 class="big"><span>Nuestra noche especial está por llegar...</span></h2>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="count-down-clock">
+                        <div id="clock">
                         </div>
                     </div>
-                    <!-- end row -->
                 </div>
-                <!-- end container -->
-            </section>
+            </div>
+            <!-- end row -->
         </div>
-        <!-- end count-down-section --> 
+        <!-- end container -->
+    </section>
+</div>
+<!-- end count-down-section -->
+
         <!-- start story-section -->
         <section class="story-section section-padding" id="story">
             <div class="container">
@@ -933,5 +938,12 @@ document.getElementById("rsvp-form").addEventListener("submit", function (event)
 
     <!-- Custom script for this template -->
     <script src="assets/js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/rellax@1.12.1/rellax.min.js"></script>
+
+    <script>
+  var rellax = new Rellax('.rellax');
+</script>
+
 </body>
 </html>

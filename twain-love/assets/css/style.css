@@ -2114,6 +2114,31 @@ couple-area end
  0.7 count-down-section
 =============================*/
 
+
+.count-down-area {
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; /* <--- antes estaba en 100% */
+    background-image: url(../images/fotos/IMG-20250425-WA0060.jpg);
+    background-size: cover;
+    background-position: center 1%;
+    z-index: 0;
+}
+
+
+.count-down-section {
+    position: relative;
+    z-index: 1;
+    padding: 100px 0;
+}
+
 .count-down-area {
     background: url(../images/fotos/IMG-20250425-WA0060.jpg) no-repeat center center / cover;
     background-position: center 1%; /* bajá el valor para moverla hacia abajo */
