@@ -232,10 +232,6 @@
         <!-- couple-area end -->
         <!-- start count-down-section -->
 <div class="count-down-area count-down-area-sub">
-    
-    <!-- Fondo parallax con Rellax -->
-    <div class="rellax bg-image" data-rellax-speed="-2"></div>
-
     <section class="count-down-section section-padding">
         <div class="container">
             <div class="col-12 text-center">
@@ -939,11 +935,7 @@ document.getElementById("rsvp-form").addEventListener("submit", function (event)
     <!-- Custom script for this template -->
     <script src="assets/js/script.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/rellax@1.12.1/rellax.min.js"></script>
 
-    <script>
-  var rellax = new Rellax('.rellax');
-</script>
 
 </body>
 </html>
