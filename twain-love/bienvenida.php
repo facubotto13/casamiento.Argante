@@ -170,39 +170,38 @@ table {
 <body>
     <h1>Bienvenido al Panel de Administración</h1>
 
-    <h2>Resumen General de Asistentes</h2>
+<h2>Resumen General de Asistentes</h2>
 
-    <form method="post" action="actualizar_resumen.php">
-        <button type="submit" name="actualizar_resumen">Actualizar Resumen</button>
-    </form>
+<form method="post" action="actualizar_resumen.php">
+    <button type="submit" name="actualizar_resumen">Actualizar Resumen</button>
+</form>
 
-    <?php if ($rowResumen = $result_resumen->fetch_assoc()): ?>
-        <table>
-            <tr>
-                <th>Total</th>
-                <th>Suma Valores</th>
-                <th>Mayores</th>
-                <th>Menores</th>
-                <th>Normal</th>
-                <th>Vegetariana</th>
-                <th>Vegano</th>
-                <th>Celíaco</th>
-            </tr>
-            <tr>
-
-                <td><?= $rowResumen['cantidad_total'] ?></td>
-                <td>$<?= $rowResumen['suma_valores'] ?></td>
-                <td><?= $rowResumen['mayores'] ?></td>
-                <td><?= $rowResumen['menores'] ?></td>
-                <td><?= $rowResumen['cantidad_normal'] ?></td>
-                <td><?= $rowResumen['cantidad_vegetariano'] ?></td>
-                <td><?= $rowResumen['cantidad_vegano'] ?></td>
-                <td><?= $rowResumen['cantidad_celiaco'] ?></td>
-            </tr>
-        </table>
-    <?php else: ?>
-        <p style="text-align:center;">No hay datos en la tabla <strong>resumen_asistentes</strong>.</p>
-    <?php endif; ?>
+<?php if ($rowResumen = $result_resumen->fetch_assoc()): ?>
+    <table>
+        <tr>
+            <th>Total</th>
+            <th>Suma Valores</th>
+            <th>Mayores</th>
+            <th>Menores</th>
+            <th>Normal</th>
+            <th>Vegetariano</th>
+            <th>Vegano</th>
+            <th>Celíaco</th>
+        </tr>
+        <tr>
+            <td><?= $rowResumen['cantidad_total'] ?></td>
+            <td>$<?= number_format($rowResumen['suma_valores'], 2) ?></td>
+            <td><?= $rowResumen['mayores'] ?></td>
+            <td><?= $rowResumen['menores'] ?></td>
+            <td><?= $rowResumen['cantidad_normal'] ?></td>
+            <td><?= $rowResumen['cantidad_vegetariano'] ?></td>
+            <td><?= $rowResumen['cantidad_vegano'] ?></td>
+            <td><?= $rowResumen['cantidad_celiaco'] ?></td>
+        </tr>
+    </table>
+<?php else: ?>
+    <p style="text-align:center;">No hay datos en la tabla <strong>resumen_asistentes</strong>.</p>
+<?php endif; ?>
 
     <h2>Listado de Asistentes</h2>
 
